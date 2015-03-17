@@ -1,0 +1,83 @@
+/*=== MB share buttons ===*/
+.mb_share .button {
+  background:#DCE0E0;
+  position:relative;
+  float:left;
+  margin:0 7px 14px;
+  width:150px;
+  height:40px; 
+  overflow:hidden;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+}
+.mb_share .button .icon {
+  float:left;
+  z-index:200;
+  position:relative;
+  width:40px;
+  height:40px;
+  -webkit-border-radius:3px 0px 0px 3px;
+  -moz-border-radius:3px 0px 0px 3px;
+  border-radius:3px 0px 0px 3px;
+  background-repeat:no-repeat;
+  background-image: url(path_to/svg);
+}
+.mb_share .button .native_button {
+  width:110px;
+  height:40px;
+  float:left;
+  background:#DCE0E0 !important;
+  display:table;
+}
+.mb_share .button .native_button > div {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+.mb_share .button .slide {
+  position:absolute;
+  right:0;
+  top:0;
+  z-index:100;
+  float:left;
+  width:110px;
+  height:40px;
+  transition:.2s transform linear;
+  -webkit-transition:.2s -webkit-transform linear;
+  -moz-transition:.2s -moz-transform linear;
+}
+.mb_share .button .slide span {
+  color:#fff;
+  display:block;
+  cursor:default;
+  width:100%;
+  text-align:center;
+  margin:10px 0;
+  padding:2px 0;
+  font-size:16px;
+  border-left:1px solid rgba(255,255,255,0.35);
+}
+/*========================*/
+/*=== Colors ===*/
+/* FACEBOOK */
+.mb_share .button.facebook .icon {
+  background-position:-40px 0;
+}
+.mb_share .button.facebook > div {
+  background-color:#305c99;
+}
+/* TWITTER */
+.mb_share .button.twitter .icon {
+  background-position:0 0;
+}
+.mb_share .button.twitter > div {
+  background-color:#00cdff;
+}
+/* MAIL */
+.mb_share .button.mail .icon {
+  background-position:0 0;
+}
+.mb_share .button.mail > div {
+  background-color:#ffcd5d;
+}
