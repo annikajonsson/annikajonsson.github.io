@@ -6,7 +6,7 @@ html, body {
     min-height: 100%;
 }
 
-body
+body 
 
 .button {
     background: #DCE0E0;
@@ -45,7 +45,6 @@ body
     color: #fff;
     line-height: 42px;
 }
-
 .slide {
     z-index: 2;
     display: block;
@@ -77,14 +76,6 @@ body
     width: 100%;
 }
 
-.button .slide {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
 .facebook iframe {
     display: block;
     position: absolute;
@@ -102,10 +93,22 @@ body
     position: absolute;
 }
 
+.mail iframe {
+    width: 90px !important;
+    right: 5px;
+    top: 10px;
+    z-index: 1;
+    display: block;
+    position: absolute;
+}
 .facebook .icon, .facebook .slide {
     background: #305c99;
 }
 
 .twitter .icon, .twitter .slide {
     background: #00cdff;
+}
+
+.mail .icon, .mail .slide {
+    background: #ffcd5d;
 }
